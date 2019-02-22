@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 220px;
   width: 800px;
 }
 
@@ -10,6 +10,7 @@
   border-radius: 5px;
   height: 32px;
   font-size: calc(8px + 2vmin);
+  margin-bottom: 10px;
   width: 200px;
 }
 

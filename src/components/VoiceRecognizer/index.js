@@ -7,12 +7,8 @@ import actionCreators from '../../redux/Translation/actions';
 import './styles.css';
 
 class VoiceRecognizer extends Component {
-  state = {};
-
-  static getDerivedStateFromProps(props, prevState){
-    if(props.transcript && (prevState.transcript !== props.transcript)){
-      props.getTranslation(props.transcript, "es", "en");
-    }
+  getTranslation(transcript) {
+    this.props.getTranslation(transcript, "es", "en");
   }
 
   render() {
@@ -21,6 +17,7 @@ class VoiceRecognizer extends Component {
       <div className="voice-recognizer-container">
         <div className="voice-recognizer-text-container">{transcript}</div>
         <div className="voice-recognizer-text-container">{translation}</div>
+        <button className="voice-recognizer-reset-button" onClick={() => this.getTranslation(transcript)}>Translate</button>
         <button className="voice-recognizer-reset-button" onClick={resetTranscript}>Reset</button>
       </div>
     ));
