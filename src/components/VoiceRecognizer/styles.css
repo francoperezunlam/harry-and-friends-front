@@ -1,0 +1,23 @@
+.voice-recognizer-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 800px;
+}
+
+.voice-recognizer-reset-button {
+  border-radius: 5px;
+  height: 32px;
+  font-size: calc(8px + 2vmin);
+  width: 200px;
+}
+
+.voice-recognizer-text-container {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+}
